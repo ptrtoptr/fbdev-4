@@ -10,290 +10,322 @@
     <link rel="shortcut icon" href="assets/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header>
-        <img src="assets/img/logo.png" alt="Логотип REVO">
-        <h1>Ваш <span class="highlight">персонализированный</span> кофе</h1>
-        <img src="assets/img/header-bg.png" alt="">
-        <nav>
-            <a href="#">
-                <div>
-                    <img src="assets/icons/shopping-cart.png" alt="">
-                    <p>2</p>
-                </div>
-            </a>
-            <ul>
-                <li><a href="#features">О кофе</a></li>
-                <li><a href="#products">Продукты</a></li>
-                <li><a href="#giftset">Подарочный набор</a></li>
-                <li><a href="#combos">Комбо</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header__logo-slogan">
+            <img class="header__logo" src="assets/img/logo.png" alt="Логотип REVO">
+            <h1 class="header__slogan">
+                Ваш<br>
+                <span class="header__slogan-highlight-wrapper">
+                    <span class="header__slogan-highlight">персональный</span>
+                </span><br>
+                кофе
+            </h1>
+        </div>
+        <div class="header__nav-wrapper">
+            <nav class="header__nav nav">
+                <a href="#">
+                    <div class="nav__cart">
+                        <img class="nav__cart-icon" src="assets/icons/shopping-cart.png" alt="">
+                        <p class="nav__cart-count">2</p>
+                    </div>
+                </a>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link nav__link--active" href="#">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#features">О кофе</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#products">Продукты</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#giftset">Подарочный набор</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#combos">Комбо</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="features">
-            <hgroup>
-                <p class="eyebrow">Ваш персонализированный кофе</p>
-                <h2>Уникальные свойства Нашего кофе</h2>
+        <section id="features" class="section features">
+            <hgroup class="section__hgroup hgroup">
+                <p class="hgroup__eyebrow">Ваш персонализированный кофе</p>
+                <h2 class="hgroup__heading">Уникальные свойства Нашего кофе</h2>
             </hgroup>
 
-            <ul>
-                <li>
-                    <img src="assets/icons/coffee-shop.png" alt="">
-                    <p>Крутое свойство</p>
-                    <p>Равным образом, сплочённость команды профессионалов способствует подготовке и реализации первоочередных требований.</p>
+            <ul class="features__list">
+                <li class="feature">
+                    <img class="feature__icon" src="assets/icons/coffee-shop.png" alt="">
+                    <p class="feature__title">Крутое свойство</p>
+                    <p class="feature__body">Равным образом, сплочённость команды профессионалов способствует подготовке и реализации первоочередных требований.</p>
                 </li>
-                <li>
-                    <img src="assets/icons/coffee-sign.png" alt="">
-                    <p>Еще крутое свойство</p>
-                    <p>Таким образом, убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение вывода текущих активов.</p>
+                <li class="feature">
+                    <img class="feature__icon" src="assets/icons/coffee-sign.png" alt="">
+                    <p class="feature__title">Еще крутое свойство</p>
+                    <p class="feature__body">Таким образом, убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение вывода текущих активов.</p>
                 </li>
-                <li>
-                    <img src="assets/icons/coffee-containers.png" alt="">
-                    <p>Свойство круче</p>
-                    <p>Безусловно, начало повседневной работы по формированию позиции напрямую зависит от глубокомысленных рассуждений.</p>
+                <li class="feature">
+                    <img class="feature__icon" src="assets/icons/coffee-containers.png" alt="">
+                    <p class="feature__title">Свойство круче</p>
+                    <p class="feature__body">Безусловно, начало повседневной работы по формированию позиции напрямую зависит от глубокомысленных рассуждений.</p>
                 </li>
-                <li>
-                    <img src="assets/icons/coffee-machine.png" alt="">
-                    <p>Крутейшее свойство</p>
-                    <p>Сложно сказать, почему базовые сценарии поведения пользователей могут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+                <li class="feature">
+                    <img class="feature__icon" src="assets/icons/coffee-machine.png" alt="">
+                    <p class="feature__title">Крутейшее свойство</p>
+                    <p class="feature__body">Сложно сказать, почему базовые сценарии поведения пользователей могут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
                 </li>
             </ul>
         </section>
 
-        <section id="products">
-            <hgroup>
-                <p class="eyebrow">Выберите любимый</p>
-                <h2>Продукты</h2>
+        <section id="products" class="section products">
+            <hgroup class="section__hgroup hgroup">
+                <p class="hgroup__eyebrow">Выберите любимые</p>
+                <h2 class="hgroup__heading">Продукты</h2>
             </hgroup>
 
-            <ul>
-                <li>
-                    <img src="assets/img/product/yellow.png" alt="">
-                    <div>
-                        <p>99,000</p>
-                        <p>REVO Утро</p>
-                        <p>Кофе для варки кофе кофеварами</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
+            <div class="products__list-wrapper">
+                <ul class="products__list">
+                    <li class="product">
+                        <img class="product__image" src="assets/img/product/yellow.png" alt="">
+                        <div class="product__info">
+                            <p class="product__price">99,000</p>
+                            <p class="product__name">REVO Утро</p>
+                            <p class="product__description">Кофе для варки кофе кофеварами</p>
+                            <div class="product__buttons">
+                                <button class="product__button product__buy">Купить</button>
+                                <button class="product__button product__details">Детали</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/product/red.png" alt="">
-                    <div>
-                        <p>139,000</p>
-                        <p>REVO Оригинал</p>
-                        <p>Кофе для варки кофе кофеварами</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
+                    </li>
+                    <li class="product">
+                        <img class="product__image" src="assets/img/product/red.png" alt="">
+                        <div class="product__info">
+                            <p class="product__price">139,000</p>
+                            <p class="product__name">REVO Оригинал</p>
+                            <p class="product__description">Кофе для варки кофе кофеварами</p>
+                            <div class="product__buttons">
+                                <button class="product__button product__buy">Купить</button>
+                                <button class="product__button product__details">Детали</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/product/blue.png" alt="">
-                    <div>
-                        <p>85,000</p>
-                        <p>REVO Каждый день</p>
-                        <p>Кофе для варки кофе кофеварами</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
+                    </li>
+                    <li class="product">
+                        <img class="product__image" src="assets/img/product/blue.png" alt="">
+                        <div class="product__info">
+                            <p class="product__price">85,000</p>
+                            <p class="product__name">REVO Каждый день</p>
+                            <p class="product__description">Кофе для варки кофе кофеварами</p>
+                            <div class="product__buttons">
+                                <button class="product__button product__buy">Купить</button>
+                                <button class="product__button product__details">Детали</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/product/brown.png" alt="">
-                    <div>
-                        <p>75,000</p>
-                        <p>REVO Лорем</p>
-                        <p>Кофе для варки кофе кофеварами</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
+                    </li>
+                    <li class="product">
+                        <img class="product__image" src="assets/img/product/brown.png" alt="">
+                        <div class="product__info">
+                            <p class="product__price">75,000</p>
+                            <p class="product__name">REVO Лорем</p>
+                            <p class="product__description">Кофе для варки кофе кофеварами</p>
+                            <div class="product__buttons">
+                                <button class="product__button product__buy">Купить</button>
+                                <button class="product__button product__details">Детали</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/product/red.png" alt="">
-                    <div>
-                        <p>1999,000</p>
-                        <p>REVO Ипсум</p>
-                        <p>Кофе для варки кофе кофеварами</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
+                    </li>
+                    <li class="product">
+                        <img class="product__image" src="assets/img/product/red.png" alt="">
+                        <div class="product__info">
+                            <p class="product__price">1999,000</p>
+                            <p class="product__name">REVO Ипсум</p>
+                            <p class="product__description">Кофе для варки кофе кофеварами</p>
+                            <div class="product__buttons">
+                                <button class="product__button product__buy">Купить</button>
+                                <button class="product__button product__details">Детали</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/product/blue.png" alt="">
-                    <div>
-                        <p>2026,000</p>
-                        <p>REVO Лорем ипсум</p>
-                        <p>Кофе для варки кофе кофеварами</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
+                    </li>
+                    <li class="product">
+                        <img class="product__image" src="assets/img/product/blue.png" alt="">
+                        <div class="product__info">
+                            <p class="product__price">2026,000</p>
+                            <p class="product__name">REVO Лорем ипсум</p>
+                            <p class="product__description">Кофе для варки кофе кофеварами</p>
+                            <div class="product__buttons">
+                                <button class="product__button product__buy">Купить</button>
+                                <button class="product__button product__details">Детали</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section id="giftset">
-            <hgroup>
-                <p class="eyebrow">Лучший подарок для лучшего друга</p>
-                <h2>Подарочный набор</h2>
+        <section id="giftset" class="section giftset">
+            <hgroup class="section__hgroup hgroup">
+                <p class="hgroup__eyebrow">Лучший подарок для лучшего друга</p>
+                <h2 class="hgroup__heading">Подарочный набор</h2>
             </hgroup>
 
             <!-- Roles from an APG example https://www.w3.org/WAI/ARIA/apg/patterns/tabs/examples/tabs-manual/ -->
-            <div>
-                <div>
-                    <div role="tabpanel" id="giftset-tabpanel-1" aria-labelledby="giftset-tab-1">
-                        <img src="assets/img/giftset/default.png" alt="Фото подарочного набора">
-                        <div>
-                            <p>285,000</p>
-                            <p>Набор &laquo;Лорем&raquo;</p>
-                            <p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции способствует повышению качества существующих финансовых и административных условий.</p>
-                            <div>
-                                <div>
-                                    <p>Тип</p>
-                                    <p>Изысканная смесь Робусты</p>
+            <div class="tabs">
+                <div class="tabs__panels">
+                    <div class="tabs__panel tabs__panel--active" role="tabpanel" id="giftset-tabpanel-1" aria-labelledby="giftset-tab-1">
+                        <div class="tabs__panel-content">
+                            <img class="tabs__panel-image" src="assets/img/giftset/default.png" alt="Фото подарочного набора">
+                            <p class="tabs__panel-price">285,000</p>
+                            <p class="tabs__panel-name">Набор &laquo;Лорем&raquo;</p>
+                            <p class="tabs__panel-description">Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции способствует повышению качества существующих финансовых и административных условий.</p>
+                            <div class="tabs__panel-properties">
+                                <div class="tabs__panel-property">
+                                    <img class="tabs__panel-property-icon" src="assets/icons/coffee-beans.png" alt="">
+                                    <div class="tabs__panel-property-type-value">
+                                        <p class="tabs__panel-property-type">Тип</p>
+                                        <p class="tabs__panel-property-value">Изысканная смесь Робусты</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p>Высота произрастания</p>
-                                    <p>700&NoBreak;&mdash;&NoBreak;800м</p>
-                                </div>
-                            </div>
-                            <div>
-                                <button>Купить</button>
-                                <button>Детали</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="tabpanel" id="giftset-tabpanel-2" aria-labelledby="giftset-tab-2">
-                        <img src="assets/img/giftset/default.png" alt="Фото подарочного набора">
-                        <div>
-                            <p>385,000</p>
-                            <p>Набор &laquo;Ипсум&raquo;</p>
-                            <p>Ясность нашей позиции очевидна: перспективное планирование предоставляет широкие возможности для глубокомысленных рассуждений.</p>
-                            <div>
-                                <div>
-                                    <p>Тип</p>
-                                    <p>Изысканная смесь Лорема</p>
-                                </div>
-                                <div>
-                                    <p>Высота произрастания</p>
-                                    <p>700&NoBreak;&mdash;&NoBreak;800м</p>
+                                <div class="tabs__panel-property">
+                                    <img class="tabs__panel-property-icon" src="assets/icons/mountain.png" alt="">
+                                    <div class="tabs__panel-property-type-value">
+                                        <p class="tabs__panel-property-type">Высота произрастания</p>
+                                        <p class="tabs__panel-property-value">700&NoBreak;&mdash;&NoBreak;800м</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <button>Купить</button>
-                                <button>Детали</button>
+                            <div class="product__buttons">
+                                <button class="product__button product__buy">Купить</button>
+                                <button class="product__button product__details">Детали</button>
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" id="giftset-tabpanel-3" aria-labelledby="giftset-tab-3">
-                        <img src="assets/img/giftset/default.png" alt="Фото подарочного набора">
-                        <div>
-                            <p>485,000</p>
-                            <p>Набор &laquo;Долор&raquo;</p>
-                            <p>Как принято считать, непосредственные участники технического прогресса, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут ассоциативно распределены по отраслям.</p>
-                            <div>
-                                <div>
-                                    <p>Тип</p>
-                                    <p>Изысканная смесь Ипсума</p>
+                    <div class="tabs__panel" role="tabpanel" id="giftset-tabpanel-2" aria-labelledby="giftset-tab-2">
+                        <img class="tabs__panel-image" src="assets/img/giftset/default.png" alt="Фото подарочного набора">
+                        <div class="tabs__panel-content">
+                            <p class="tabs__panel-price">385,000</p>
+                            <p class="tabs__panel-name">Набор &laquo;Ипсум&raquo;</p>
+                            <p class="tabs__panel-description">Ясность нашей позиции очевидна: перспективное планирование предоставляет широкие возможности для глубокомысленных рассуждений.</p>
+                            <div class="tabs__panel-properties">
+                                <div class="tabs__panel-property">
+                                    <img class="tabs__panel-property-icon" src="assets/icons/coffee-beans.png" alt="">
+                                    <div class="tabs__panel-property-type-value">
+                                        <p class="tabs__panel-property-type">Тип</p>
+                                        <p class="tabs__panel-property-value">Изысканная смесь Лорема</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p>Высота произрастания</p>
-                                    <p>700&NoBreak;&mdash;&NoBreak;800 аршин</p>
+                                <div class="tabs__panel-property">
+                                    <img class="tabs__panel-property-icon" src="assets/icons/mountain.png" alt="">
+                                    <div class="tabs__panel-property-type-value">
+                                        <p class="tabs__panel-property-type">Высота произрастания</p>
+                                        <p class="tabs__panel-property-value">700&NoBreak;&mdash;&NoBreak;800м</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <button>Купить</button>
-                                <button>Детали</button>
+                            <div class="product__buttons">
+                                <button class="product__button product__buy">Купить</button>
+                                <button class="product__button product__details">Детали</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__panel" role="tabpanel" id="giftset-tabpanel-3" aria-labelledby="giftset-tab-3">
+                        <img class="tabs__panel-image" src="assets/img/giftset/default.png" alt="Фото подарочного набора">
+                        <div class="tabs__panel-content">
+                            <p class="tabs__panel-price">485,000</p>
+                            <p class="tabs__panel-name">Набор &laquo;Долор&raquo;</p>
+                            <p class="tabs__panel-description">Как принято считать, непосредственные участники технического прогресса, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут ассоциативно распределены по отраслям.</p>
+                            <div class="tabs__panel-properties">
+                                <div class="tabs__panel-property">
+                                    <img class="tabs__panel-property-icon" src="assets/icons/coffee-beans.png" alt="">
+                                    <div class="tabs__panel-property-type-value">
+                                        <p class="tabs__panel-property-type">Тип</p>
+                                        <p class="tabs__panel-property-value">Изысканная смесь Ипсума</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__panel-property">
+                                    <img class="tabs__panel-property-icon" src="assets/icons/mountain.png" alt="">
+                                    <div class="tabs__panel-property-type-value">
+                                        <p class="tabs__panel-property-type">Высота произрастания</p>
+                                        <p class="tabs__panel-property-value">700&NoBreak;&mdash;&NoBreak;800 аршин</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__buttons">
+                                <button class="product__button product__buy">Купить</button>
+                                <button class="product__button product__details">Детали</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div role="tablist">
-                    <button id="giftset-tab-1" role="tab">1</button>
-                    <button id="giftset-tab-2" role="tab">2</button>
-                    <button id="giftset-tab-3" role="tab">3</button>
+                <div class="tabs__list" role="tablist">
+                    <button class="tabs__tab tabs__tab--active" id="giftset-tab-1" role="tab">1</button>
+                    <button class="tabs__tab" id="giftset-tab-2" role="tab">2</button>
+                    <button class="tabs__tab" id="giftset-tab-3" role="tab">3</button>
                 </div>
             </div>
         </section>
 
-        <section id="combos">
-            <hgroup>
-                <p class="eyebrow">Ваш персонализированный кофе</p>
-                <h2>Комбо</h2>
+        <section id="combos" class="section combos">
+            <hgroup class="section__hgroup hgroup">
+                <p class="hgroup__eyebrow">Ваш персонализированный кофе</p>
+                <h2 class="hgroup__heading">Комбо</h2>
             </hgroup>
 
-            <ul>
-                <li>
-                    <img src="assets/img/combo/brown.png" alt="Комбо Revo кофе">
-                    <div>
-                        <div>
-                            <div>147,000</div>
-                            <div>155,000</div>
+            <ul class="combos__list">
+                <li class="combo combo--active">
+                    <img class="combo__image" src="assets/img/combo/brown.png" alt="Комбо Revo кофе">
+                    <div class="combo__content">
+                        <div class="combo__price">
+                            <div class="combo__price-current">147,000</div>
+                            <div class="combo__price-previous">155,000</div>
                         </div>
-                        <p>Комбо Revo Лорем</p>
-                        <p>С учётом сложившейся международной обстановки, высокое качество позиционных исследований создаёт...</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/combo/blue.png" alt="Комбо Revo кофе">
-                    <div>
-                        <div>
-                            <div>156,000</div>
-                            <div>165,000</div>
-                        </div>
-                        <p>Комбо Revo Каждый день</p>
-                        <p>Также как базовый вектор развития представляет собой интересный эксперимент проверки анализа...</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
+                        <p class="combo__name">Комбо Revo Лорем</p>
+                        <p class="combo__description">С учётом сложившейся международной обстановки, высокое качество позиционных исследований создаёт...</p>
+                        <div class="product__buttons">
+                            <button class="product__button product__buy">Купить</button>
+                            <button class="product__button product__details">Детали</button>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <img src="assets/img/combo/red.png" alt="Комбо Revo кофе">
-                    <div>
-                        <div>
-                            <div>260,000</div>
-                            <div>275,000</div>
+                <li class="combo combo--active">
+                    <img class="combo__image" src="assets/img/combo/blue.png" alt="Комбо Revo кофе">
+                    <div class="combo__content">
+                        <div class="combo__price">
+                            <div class="combo__price-current">156,000</div>
+                            <div class="combo__price-previous">165,000</div>
                         </div>
-                        <p>Комбо Revo Мёд</p>
-                        <p>В своём стремлении повысить качество жизни, они забывают, что высококачественный...</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
+                        <p class="combo__name">Комбо Revo Каждый день</p>
+                        <p class="combo__description">Также как базовый вектор развития представляет собой интересный эксперимент проверки анализа...</p>
+                        <div class="product__buttons">
+                            <button class="product__button product__buy">Купить</button>
+                            <button class="product__button product__details">Детали</button>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <img src="assets/img/combo/brown.png" alt="Комбо Revo кофе">
-                    <div>
-                        <div>
-                            <div>249,000</div>
-                            <div>260,000</div>
+                <li class="combo combo--active">
+                    <img class="combo__image" src="assets/img/combo/red.png" alt="Комбо Revo кофе">
+                    <div class="combo__content">
+                        <div class="combo__price">
+                            <div class="combo__price-current">260,000</div>
+                            <div class="combo__price-previous">275,000</div>
                         </div>
-                        <p>Комбо Revo Ипсум</p>
-                        <p>В целом, конечно, укрепление и развитие внутренней структуры влечет за собой процесс...</p>
-                        <div>
-                            <button>Купить</button>
-                            <button>Детали</button>
+                        <p class="combo__name">Комбо Revo Мёд</p>
+                        <p class="combo__description">В своём стремлении повысить качество жизни, они забывают, что высококачественный...</p>
+                        <div class="product__buttons">
+                            <button class="product__button product__buy">Купить</button>
+                            <button class="product__button product__details">Детали</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="combo">
+                    <img class="combo__image" src="assets/img/combo/brown.png" alt="Комбо Revo кофе">
+                    <div class="combo__content">
+                        <div class="combo__price">
+                            <div class="combo__price-current">249,000</div>
+                            <div class="combo__price-previous">260,000</div>
+                        </div>
+                        <p class="combo__name">Комбо Revo Ипсум</p>
+                        <p class="combo__description">В целом, конечно, укрепление и развитие внутренней структуры влечет за собой процесс...</p>
+                        <div class="product__buttons">
+                            <button class="product__button product__buy">Купить</button>
+                            <button class="product__button product__details">Детали</button>
                         </div>
                     </div>
                 </li>
@@ -301,7 +333,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy;&nbsp;Revo кофе&nbsp;&mdash; 2026</p>
     </footer>
 </body>
