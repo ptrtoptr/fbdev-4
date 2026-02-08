@@ -32,6 +32,18 @@
     font-weight: 400;
 }
 
+@media (max-width: 720px), (max-height: 720px) {
+    :root {
+        --font-header-large: 900 30px/34px var(--font-family-montserrat);
+    }
+}
+
+@media (max-width: 360px) {
+    :root {
+        --font-header-large: 900 24px/28px var(--font-family-montserrat);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -57,6 +69,12 @@ img {
     height: 100vh;
     display: flex;
     margin-left: 17%;
+}
+
+@media (max-width: 380px) {
+    .header {
+        margin-left: 8%;
+    }
 }
 
 .header__logo-slogan {
@@ -106,6 +124,25 @@ img {
     color: var(--color-bg-primary);
 }
 
+@media (max-width: 720px) {
+    .header__nav {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__nav {
+        padding: 4rem 1rem 2rem 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .header__nav {
+        padding: 4rem 0rem 2rem 0rem;
+    }
+}
+
 .nav__cart {
     margin-left: 1rem;
     position: relative;
@@ -129,6 +166,12 @@ img {
 
 .nav__list {
     margin-top: 10rem;
+}
+
+@media (max-height: 720px) {
+    .nav__list {
+        margin-top: 4rem;
+    }
 }
 
 .nav__link {
@@ -158,7 +201,7 @@ img {
 .hgroup {
     display: table;
     margin: 0px auto 0px auto;
-    padding: 1rem;
+    padding: 0.25rem;
     background-color: var(--color-bg-primary);
     margin-bottom: 6rem;
     text-align: center;
@@ -180,7 +223,7 @@ img {
     margin: 0 8rem;
     display: flex;
     gap: 2rem;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -229,9 +272,9 @@ img {
 
 .products__list {
     display: grid;
-    margin-left: 8rem;
+    margin-left: 10%;
     padding-bottom: 1rem;
-    padding-right: 46rem;
+    padding-right: 15%;
     grid-template-rows: repeat(2, auto);
     grid-auto-flow: column;
     row-gap: 1rem;
@@ -240,12 +283,27 @@ img {
     scrollbar-width: none;
 }
 
+@media (max-width: 720px) {
+    .products__list {
+        margin-left: 5%;
+        grid-template-rows: repeat(1, auto);
+        scrollbar-width: auto;
+    }
+}
+
 .product {
     /* FIXME: Couldn't figure out how to make the product card take up enough space */
     min-width: 36rem;
     display: flex;
     background-color: var(--color-bg-white);
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 720px) {
+    .product {
+        min-width: 20rem;
+        flex-direction: column;
+    }
 }
 
 .product__info {
@@ -325,6 +383,37 @@ img {
     background-color: var(--color-bg-white);
 }
 
+@media (max-width: 1080px) {
+    .tabs {
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .tabs {
+        margin-top: 22rem;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 640px) {
+    .tabs {
+        margin-top: 18rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabs {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+    .tabs {
+        margin-top: 12rem;
+    }
+}
+
 .tabs__panel {
     display: none;
 }
@@ -339,11 +428,46 @@ img {
     padding: 4rem 2rem;
 }
 
+@media (max-width: 900px) {
+    .tabs__panel-content {
+        margin-left: 0;
+    }
+}
+
 .tabs__panel-image {
     position: absolute;
     top: calc(50% + 28px);
     transform: translateY(-50%);
     left: -30rem;
+}
+
+@media (max-width: 1080px) {
+    .tabs__panel-image {
+        left: -26rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .tabs__panel-image {
+        top: initial;
+        top: -20rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 640px) {
+    .tabs__panel-image {
+        top: -16rem;
+        width: 360px;
+    }
+}
+
+@media (max-width: 360px) {
+    .tabs__panel-image {
+        top: -10rem;
+        width: 240px;
+    }
 }
 
 .tabs__panel-price {
@@ -393,8 +517,14 @@ img {
     justify-content: space-between;
 }
 
+@media (max-width: 480px) {
+    .tabs__list {
+        flex-direction: row;
+    }
+}
+
 .tabs__tab {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     flex: 1;
     border: none;
     background-color: var(--color-gray-light);
