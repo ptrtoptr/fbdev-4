@@ -287,7 +287,6 @@ img {
     .products__list {
         margin-left: 5%;
         grid-template-rows: repeat(1, auto);
-        scrollbar-width: auto;
     }
 }
 
