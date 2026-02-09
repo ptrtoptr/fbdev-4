@@ -185,11 +185,11 @@ img {
 }
 
 .nav__link:hover {
-    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+    background-image: linear-gradient(rgb(0 0 0/10%), rgb(0 0 0/10%));
 }
 
 .nav__link:active {
-    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+    background-image: linear-gradient(rgb(0 0 0/20%), rgb(0 0 0/20%));
 }
 
 /* SECTIONS */
@@ -245,7 +245,7 @@ img {
 /* PRODUCTS */
 
 .products {
-    background-image: linear-gradient(var(--color-primary));
+    background-image: linear-gradient(var(--color-primary), var(--color-primary));
     background-repeat: no-repeat;
     background-size: 25% 100%;
 }
@@ -345,11 +345,11 @@ img {
 }
 
 .product__button:hover {
-    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+    background-image: linear-gradient(rgb(0 0 0/10%), rgb(0 0 0/10%));
 }
 
 .product__button:active {
-    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+    background-image: linear-gradient(rgb(0 0 0/20%), rgb(0 0 0/20%));
 }
 
 .product__buy {
@@ -366,7 +366,7 @@ img {
 /* GIFTSETS */
 
 .giftset {
-    background-image: linear-gradient(var(--color-gray-light));
+    background-image: linear-gradient(var(--color-gray-light), var(--color-gray-light));
     background-repeat: no-repeat;
     background-size: 80% 100%;
 }
@@ -538,17 +538,17 @@ img {
 }
 
 .tabs__tab:not(.tabs__tab--active):hover {
-    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+    background-image: linear-gradient(rgb(0 0 0/10%), rgb(0 0 0/10%));
 }
 
 .tabs__tab:not(.tabs__tab--active):active {
-    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+    background-image: linear-gradient(rgb(0 0 0/20%), rgb(0 0 0/20%));
 }
 
 /* COMBOS */
 
 .combos {
-    background-image: linear-gradient(var(--color-primary));
+    background-image: linear-gradient(var(--color-primary), var(--color-primary));
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-size: 20% 100%;
